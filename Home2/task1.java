@@ -1,3 +1,5 @@
+package Home2;
+
 import java.io.*;
 
 //Задание 4 из презентации
