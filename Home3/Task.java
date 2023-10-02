@@ -50,6 +50,7 @@ public class Task {
                 if (gender == 'f' || gender == 'm'){
                     File file = new File(lastname);
                     if (file.createNewFile()){
+                        //закрытие файла не нужно из-за конструкции try-with-resources
                         try(FileWriter writer = new FileWriter(file)){
                             writer.append(String.format("<%s><%s><%s><%s><%d><%s>",lastname,name,midname,birthday,phone,gender));
                         }catch (Exception e){
